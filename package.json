@@ -1,6 +1,6 @@
 {
   "name": "nmea0183-vdr",
-  "description": "Signal K plugin to log depth in NMEA0183 format",
+  "description": "Signal K plugin to log data into a NMEA0183 formatted file. ",
   "author": {
     "name": "marcobergman@gmail.com"
   },
