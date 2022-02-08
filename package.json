@@ -1,5 +1,5 @@
 {
-  "name": "nmea0183-vdr",
+  "name": "signalk-nmea0183-vdr",
   "description": "Signal K plugin to log data into a NMEA0183 formatted file. ",
   "author": {
     "name": "marcobergman@gmail.com"
@@ -7,9 +7,8 @@
   "dependencies": {
     "baconjs": "^0.7.88"
   },
-  "deprecated": false,
   "keywords": [
     "signalk-node-server-plugin"
   ],
-  "version": "1.0.1"
+  "version": "1.0.0"
 }
