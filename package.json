@@ -1,5 +1,5 @@
 {
-  "name": "signalk-nmea0183-vdr",
+  "name": "sk-nmea0183-vdr",
   "description": "Signal K plugin to log data into a NMEA0183 formatted file. ",
   "author": {
     "name": "marcobergman@gmail.com"
