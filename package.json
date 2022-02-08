@@ -1,0 +1,54 @@
+{
+  "_from": "signalk-nmea0183-vdr@^1.0.0",
+  "_id": "signalk-nmea0183-vdr@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DLVgw1LxMakwJeTInn4X9zhtPNtZcZXG7fefO3z0NixvxNZRROGWylBzc7/VhNdgqACNajjSikhS2J3HU+N+dA==",
+  "_location": "/signalk-server/signalk-nmea0183-vdr",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "signalk-nmea0183-vdr@^1.0.0",
+    "name": "signalk-nmea0183-vdr",
+    "escapedName": "signalk-nmea0183-vdr",
+    "scope": "@signalk",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/signalk-server"
+  ],
+  "_resolved": "https://registry.npmjs.org/@signalk/signalk-nmea0183-vdr/-/signalk-nmea0183-vdr-1.0.0.tgz",
+  "_shasum": "a2a324e342163c3f7fea66c76d2218f47eb90d64",
+  "_spec": "@signalk/signalk-nmea0183-vdr@^1.0.0",
+  "_where": "/usr/lib/node_modules/signalk-server",
+  "author": {
+    "name": "teppo.kurki@iki.fi"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "baconjs": "^0.7.88"
+  },
+  "deprecated": false,
+  "description": "Signal K server plugin to log depth in NMEA0183 format",
+  "devDependencies": {
+    "@signalk/github-create-release": "^1.2.0",
+    "github-changes": "^1.0.4",
+    "mocha": "^8.1.3",
+    "prettier-standard": "^6.0.0"
+  },
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "signalk-nmea0183-vdr",
+  "scripts": {
+    "create-release": "github-create-release --owner signalk --repository signalk-nmea0183-vdr",
+    "format": "prettier-standard '*.js*' 'sentences/*.js'",
+    "release": "git tag -d v$npm_package_version && git tag v$npm_package_version && git push --tags && git push && npm run create-release",
+    "test": "mocha"
+  },
+  "version": "1.0.0"
+}
