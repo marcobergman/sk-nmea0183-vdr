@@ -15,7 +15,7 @@ module.exports = function (app) {
     unsubscribes: []
   }
 
-  plugin.id = 'signalk-nmea0183-vdr'
+  plugin.id = 'nmea0183-vdr'
   plugin.name = 'NMEA0183 logging'
   plugin.description = 'Plugin to log voyage data into a NMEA0183 formatted file'
 
