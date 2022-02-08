@@ -9,7 +9,7 @@
   },
   "deprecated": false,
   "keywords": [
-    "signalk-webapp"
+    "signalk-node-server-plugin"
   ],
   "version": "1.0.0"
 }
