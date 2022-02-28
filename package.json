@@ -10,5 +10,9 @@
   "keywords": [
     "signalk-node-server-plugin"
   ],
-  "version": "1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobergman/sk-nmea0183-vdr.git"
+  },
+  "version": "1.0.1"
 }
