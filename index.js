@@ -29,7 +29,9 @@ module.exports = function (app) {
 
   plugin.start = function (options) {
     //app.debug('Options: ' + JSON.stringify(options));
-    plugin.logfile = fs.createWriteStream(options.logfilename, {flags:'a'});
+    plugin.today = new Date().toISOString().slice(0, 10)
+
+    plugin.logfile = fs.createWriteStream(options.logfilename.replace(".", plugin.today + "."), {flags:'a'});
     const selfContext = 'vessels.' + app.selfId
     const selfMatcher = delta => delta.context && delta.context === selfContext
 
@@ -61,6 +63,12 @@ module.exports = function (app) {
       plugin.unsubscribes.push(
         stream
           .onValue(nmeaString => {
+            now = new Date().toISOString().slice(0, 10)
+            if (now !== plugin.today) {
+              plugin.today = new Date().toISOString().slice(0, 10)
+              plugin.logfile.end()
+              plugin.logfile = fs.createWriteStream(options.logfilename.replace(".", plugin.today + "."), {flags:'a'});
+            }
 	    plugin.logfile.write(nmeaString + "\n")
           })
       )
